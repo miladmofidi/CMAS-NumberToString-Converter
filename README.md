@@ -1,2 +1,5 @@
-# CMAS-Solution
-This is a CMAS code challenge that contains three steps according to the guidelines and in each step, the algorithm has been changed little
+# CMAS Word Finder
+This is a project to convert numbers to constant/dynamic words and find their repetition frequency.
+
+## Demo
+if the inputted number i % 3 == 0 then replace number with "CMAS" or if i % 5 == 0 then replace number with "systems" 
