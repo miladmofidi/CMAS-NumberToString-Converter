@@ -1,4 +1,4 @@
-# CMAS Word Finder
+# CMAS Number To String Converter
 This is a project to convert numbers to constant/dynamic words and find their repetition frequency.
 
 ## Demo
