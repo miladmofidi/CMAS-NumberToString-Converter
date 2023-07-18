@@ -25,7 +25,7 @@ public class Main
         System.out.println(Arrays.toString(convertedData));
 
         //Counting and printing each string occurrence in the data
-        Map<String, Integer> countData = convertorServiceImpl.countData(convertedData);
+        Map<String, Integer> countData = convertorServiceImpl.countDataSolution1(convertedData);
         countData.forEach((K, V) -> {
             System.out.println(K + " : " + V);
         });
