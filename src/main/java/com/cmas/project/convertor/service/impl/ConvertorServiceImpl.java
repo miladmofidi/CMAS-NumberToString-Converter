@@ -6,14 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -40,9 +33,6 @@ public class ConvertorServiceImpl implements ConvertorService {
 		System.out.print( "Enter the array size, then press enter: " + "\t" );
 		int arraySize = scan.nextInt();
 		try {
-			//if default java assertion is active
-			assert arraySize > 0;
-
 			if ( arraySize <= 0 ) {
 				System.err.println( "Error: you should enter the size greater than zero" );
 				throw new IllegalArgumentException( "Array size must be greater than zero" );
@@ -92,7 +82,7 @@ public class ConvertorServiceImpl implements ConvertorService {
 		Map<String, Integer> countingResult = new HashMap<>();
 		//if default java assertion is active
 
-		if ( input == null ) {
+		if ( Objects.isNull(input) ) {
 			System.err.println( "Error: the inputted array is null" );
 			throw new IllegalArgumentException( "Inputted array must be not null" );
 		}
